@@ -32,5 +32,6 @@
 `npm run start`
 
 ## Ссылки на репозитории проекта в GitHub:
+* [Backend + Frontend Mesto](https://github.com/IzabellaPavlova/react-mesto-api-full-gha)
 * [Backend Mesto](https://github.com/IzabellaPavlova/express-mesto-gha)
 * [Frontend Mesto на React](https://github.com/IzabellaPavlova/react-mesto-auth)
