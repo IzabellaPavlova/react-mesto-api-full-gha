@@ -1,0 +1,11 @@
+.popup__status {
+  margin: 60px 155px 0;
+  width: 120px;
+  height: 120px;
+}
+
+@media screen and (max-width: 640px) {
+  .popup__status {
+    margin: 50px 80px 0;
+  }
+}

@@ -1,0 +1,28 @@
+.profile__edit-avatar-button {
+  position: relative;
+  background: inherit;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.2s linear;
+}
+
+.profile__edit-avatar-button:hover {
+  cursor: pointer;
+}
+
+.profile__edit-avatar-button::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, .8) url(../../../images/profile__edit-button.svg) center / 26px no-repeat;
+  z-index: 1;
+  inset: 0;
+  visibility: hidden;
+}
+
+.profile__edit-avatar-button:hover::before {
+  visibility: visible;
+}

@@ -1,5 +1,4 @@
-[![Tests](../../actions/workflows/tests-13-sprint.yml/badge.svg)](../../actions/workflows/tests-13-sprint.yml) [![Tests](../../actions/workflows/tests-14-sprint.yml/badge.svg)](../../actions/workflows/tests-14-sprint.yml)
-# Бэкенд проекта Mesto
+# Mesto React с авторизацией
 
 ## О чем проект?
 
@@ -7,28 +6,30 @@
 
 ## Функционал:
 
-- Зарегистрироваться и авторизоваться на сайте
+- Зарегистрироваться / авторизоваться / выйти
 - Изменить имя, описание профиля и аватар
 - Добавить новое место
 - Лайкнуть карточку с местом
 
 ## Используемые технологии:
 
-![Node](https://img.shields.io/badge/-Node-090909?style=for-the-badge&logo=Node)
+![React](https://img.shields.io/badge/-React-090909?style=for-the-badge&logo=React)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-090909?style=for-the-badge&logo=JavaScript)
-![Express](https://img.shields.io/badge/-Express-090909?style=for-the-badge&logo=Express)
-![MongoDB](https://img.shields.io/badge/-MongoDB-090909?style=for-the-badge&logo=MongoDB)
+![Webpack](https://img.shields.io/badge/-Webpack-090909?style=for-the-badge&logo=Webpack)
+![HTML5](https://img.shields.io/badge/-HTML5-090909?style=for-the-badge&logo=HTML5)
+![CSS3](https://img.shields.io/badge/-CSS3-090909?style=for-the-badge&logo=CSS3)
 
 ## Инструкция по установке:
 1. Клонировать репозиторий (SSH)
 `git clone git@github.com:IzabellaPavlova/react-mesto-api-full-gha.git`
-2. Перейти в папку с backend
-`cd backend`
+2. Перейти в папку с frontend
+`cd frontend`
 3. Установить зависимости
 `npm install`
-4. Запустить приложение
-`npm run start` - запускает сервер
-`npm run dev` - запускает сервер с hot-reload
+4. Собрать фронтенд приложения
+`npm run build`
+5. Запустить приложение
+`npm run start`
 
 ## Ссылки на репозитории проекта в GitHub:
 * [Backend Mesto](https://github.com/IzabellaPavlova/express-mesto-gha)
