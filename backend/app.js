@@ -28,11 +28,11 @@ app.use(cookieParser());
 app.use(requestsLogger);
 
 // TODO: Delete after review
-// app.get('/crash-test', () => {
-//   setTimeout(() => {
-//     throw new Error('Сервер сейчас упадёт');
-//   }, 0);
-// });
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 
 app.use(routes);
 

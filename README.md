@@ -38,6 +38,6 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.25.193
+IP 158.160.25.193
 Frontend https://feierabend.nomoreparties.co
 Backend https://api.feierabend.nomoreparties.co
