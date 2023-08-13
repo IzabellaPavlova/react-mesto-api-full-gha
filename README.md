@@ -37,8 +37,8 @@
 * [Frontend Mesto на React](https://github.com/IzabellaPavlova/react-mesto-auth)
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.25.193
 
-Frontend https://...
+Frontend https://feierabend.nomoreparties.co
 
-Backend https://...
+Backend https://api.feierabend.nomoreparties.co
