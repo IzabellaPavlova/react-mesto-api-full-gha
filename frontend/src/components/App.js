@@ -74,7 +74,7 @@ function App() {
       auth.getToken(jwt).then((res) => {
         if (res) {
           setIsLoggedIn(true);
-          setEmailName(res.data.email);
+          setEmailName(res.email);
         }
       }).catch((err) => {
         console.error(err);
@@ -91,13 +91,17 @@ function App() {
   // Cards, userInfo
 
   useEffect(() => {
-    Promise.all([api.getUserInfo(), api.getInitialCards()]).then(([userData, cards]) => {
-      setCurrentUser(userData);
-      setCards(cards);
-    }).catch((error) => {
-      console.error(error);
-    });
-  }, [])
+    if (isLoggedIn) {
+      Promise.all([api.getUserInfo(), api.getInitialCards()])
+        .then(([userData, cards]) => {
+          setCurrentUser(userData);
+          setCards(cards);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+    }
+  }, [isLoggedIn]);
 
   // Profile
 
@@ -147,7 +151,7 @@ function App() {
   }
 
   function handleCardLike(card) {
-    const isLiked = card.likes.some(i => i._id === currentUser._id);
+    const isLiked = card.likes.some(i => i === currentUser._id);
     if (!isLiked) {
       api.addCardLike(card._id).then((newCard) => {
         setCards((state) => state.map((c) => c._id === card._id ? newCard : c));

@@ -1,3 +1,5 @@
+const { BASE_URL } = require('./constants');
+
 function checkResponse(result) {
   if (result.ok) {
     return result.json();
@@ -6,8 +8,6 @@ function checkResponse(result) {
     return Promise.reject(`${result.status} Error: ${result.statusText}`);
   }
 }
-
-export const BASE_URL = "https://auth.nomoreparties.co";
 
 export function registerUser(email, password) {
   return fetch(`${BASE_URL}/signup`, {
@@ -33,6 +33,7 @@ export function getToken(jwt) {
   return fetch(`${BASE_URL}/users/me`, {
     method: "GET",
     headers: {
+      "Accept": 'application/json',
       "Content-Type": "application/json",
       Authorization: `Bearer ${jwt}`,
     },
